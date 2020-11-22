@@ -8,14 +8,20 @@ public class Task {
     private int interval;
     private boolean active;
     public Task(){}
-    public Task(String title, int time){
+    public Task(String title, int time) throws IllegalArgumentException{
+        if(time<0){
+            throw new IllegalArgumentException("Time can not be negative, your time = " + time);
+        }
         this.title=title;
         this.time=time;
         start=time;
         end=time;
         interval=0;
     }
-    public Task(String title, int start, int end, int interval){
+    public Task(String title, int start, int end, int interval) throws IllegalArgumentException{
+        if(interval<=0){
+            throw new IllegalArgumentException("The interval must be greater than zero, your interval = " + interval);
+        }
         time=start;
         this.title=title;
         this.start=start;

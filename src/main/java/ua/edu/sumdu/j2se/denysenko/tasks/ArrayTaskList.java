@@ -34,11 +34,11 @@ public class ArrayTaskList {
     public int size(){
         return size;
     }
-    public Task getTask(int index){
-        if(index>=0 && index<size){
-            return arrayList[index];
+    public Task getTask(int index) throws IndexOutOfBoundsException{
+        if(index<0 || index>=size){
+            throw new IndexOutOfBoundsException("The maximum index of an element in an array = "+ (size-1) + ", your index = " + index);
         }
-        else return null;
+        return arrayList[index];
     }
     public ArrayTaskList incoming(int from, int to){
         ArrayTaskList arrayTaskList=new ArrayTaskList();
