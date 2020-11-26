@@ -1,6 +1,6 @@
 package ua.edu.sumdu.j2se.denysenko.tasks;
 
-public class ArrayTaskList {
+public class ArrayTaskList extends AbstractTaskList {
     private Task arrayList[]=new Task[5];
     private int size=0;
     private int maxSize=5;
