@@ -1,6 +1,5 @@
 package ua.edu.sumdu.j2se.denysenko.tasks;
 
-import java.util.Objects;
 
 public class Task implements Cloneable{
     private String title;
@@ -10,6 +9,7 @@ public class Task implements Cloneable{
     private int interval;
     private boolean active;
     public Task(){}
+
     public Task(String title, int time) throws IllegalArgumentException{
         if(time < 0){
             throw new IllegalArgumentException("Time can not be negative, your time = " + time);
@@ -20,6 +20,7 @@ public class Task implements Cloneable{
         end = time;
         interval = 0;
     }
+
     public Task(String title, int start, int end, int interval) throws IllegalArgumentException{
         if(interval <= 0){
             throw new IllegalArgumentException("The interval must be greater than zero, your interval = " + interval);
@@ -30,6 +31,7 @@ public class Task implements Cloneable{
         this.end = end;
         this.interval = interval;
     }
+
     public String getTitle(){
         return title;
     }
@@ -45,31 +47,38 @@ public class Task implements Cloneable{
     public int getTime(){
         return time;
     }
+
     public void setTime(int time){
         this.time = time;
         start = time;
         end = time;
     }
+
     public int getStartTime(){
         return start;
     }
+
     public int getEndTime(){
         return end;
     }
+
     public int getRepeatInterval(){
         if(start >= end) return 0;
         else return interval;
     }
+
     public void setTime(int start, int end, int interval){
         time = start;
         this.start = start;
         this.end = end;
         this.interval = interval;
     }
+
     public boolean isRepeated(){
         if(start < end && interval > 0) return true;
         else return false;
     }
+
     public int nextTimeAfter(int current){
         if(current >= 0 && active){
             if(isRepeated()){
@@ -135,7 +144,7 @@ public class Task implements Cloneable{
     }
 
     @Override
-    public Task clone() throws CloneNotSupportedException {
+    public Task clone() {
         Task task = new Task();
         task.start = this.start;
         task.active = this.active;

@@ -1,13 +1,16 @@
 package ua.edu.sumdu.j2se.denysenko.tasks;
 
+
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Objects;
+
 
 public class ArrayTaskList extends AbstractTaskList {
     private Task arrayList[] = new Task[5];
     private int size = 0;
     private int maxSize = 5;
+
     public void add(Task task){
         if(size == maxSize){
             Task newArrayList[] = new Task[2 * maxSize];
@@ -24,6 +27,7 @@ public class ArrayTaskList extends AbstractTaskList {
             size++;
         }
     }
+
     public boolean remove(Task task){
         int i = 0;
         while(i < size && arrayList[i] != task) i++;
@@ -36,27 +40,23 @@ public class ArrayTaskList extends AbstractTaskList {
             return true;
         }
     }
+
     public int size(){
         return size;
     }
+
     public Task getTask(int index) throws IndexOutOfBoundsException{
         if(index < 0 || index >= size){
             throw new IndexOutOfBoundsException("The maximum index of an element in an array = "+ (size-1) + ", your index = " + index);
         }
         return arrayList[index];
     }
-    public ArrayTaskList incoming(int from, int to){
-        ArrayTaskList arrayTaskList=new ArrayTaskList();
-        for(int i = 0; i < size; i++){
-            int time = arrayList[i].nextTimeAfter(from);
-            if(time <= to && time != -1)  arrayTaskList.add(arrayList[i]);
-        }
-        return arrayTaskList;
-    }
+
     @Override
     public Iterator <Task> iterator(){
         return new ArrayTaskListIterator();
     }
+
     private class ArrayTaskListIterator implements Iterator<Task> {
         int lastIndex = -1;
         @Override
@@ -111,8 +111,7 @@ public class ArrayTaskList extends AbstractTaskList {
     }
 
     @Override
-    public ArrayTaskList clone() throws CloneNotSupportedException {
-        super.clone();
+    public ArrayTaskList clone() {
         ArrayTaskList arrayTaskList = new ArrayTaskList();
         for (Task a: this.arrayList) {
             arrayTaskList.add(a);
@@ -120,6 +119,10 @@ public class ArrayTaskList extends AbstractTaskList {
         arrayTaskList.size = this.size;
         arrayTaskList.maxSize = this.maxSize;
         return arrayTaskList;
+    }
+    @Override
+    public ListTypes.types getType(){
+        return ListTypes.types.ARRAY;
     }
 
 }
