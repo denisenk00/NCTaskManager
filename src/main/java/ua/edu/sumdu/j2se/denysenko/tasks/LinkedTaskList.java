@@ -2,9 +2,8 @@ package ua.edu.sumdu.j2se.denysenko.tasks;
 
 
 import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.NoSuchElementException;
 import java.util.Objects;
+
 
 public class LinkedTaskList extends AbstractTaskList {
     private class ListElement{
@@ -81,17 +80,6 @@ public class LinkedTaskList extends AbstractTaskList {
         return x.task;
     }
 
-    public LinkedTaskList incoming(int from, int to){
-        LinkedTaskList linkedTaskList = new LinkedTaskList();
-        ListElement x = head;
-        while(x.next != null){
-            int time = x.task.nextTimeAfter(from);
-            if(time <= to && time != -1)  linkedTaskList.add(x.task);
-            x = x.next;
-        }
-        return linkedTaskList;
-    }
-
     @Override
     public Iterator<Task> iterator() {
         return new LinkedTaskListIterator();
@@ -152,7 +140,7 @@ public class LinkedTaskList extends AbstractTaskList {
     public int hashCode() {
         int result = Objects.hash(size);
         ListElement a = head;
-        for(int i = 0; i<size; i++){
+        for(int i = 0; i < size; i++){
             result = 31 * result + a.task.hashCode();
             a = a.next;
         }
@@ -160,7 +148,7 @@ public class LinkedTaskList extends AbstractTaskList {
     }
 
     @Override
-    public LinkedTaskList clone() throws CloneNotSupportedException {
+    public LinkedTaskList clone() {
         LinkedTaskList linkedTaskList = new LinkedTaskList();
         for(int i = 0; i < size; i++){
             linkedTaskList.add(getTask(i));
@@ -178,4 +166,10 @@ public class LinkedTaskList extends AbstractTaskList {
         }
         return result;
     }
+    @Override
+    public ListTypes.types getType(){
+        return ListTypes.types.LINKED;
+    }
+
+
 }
