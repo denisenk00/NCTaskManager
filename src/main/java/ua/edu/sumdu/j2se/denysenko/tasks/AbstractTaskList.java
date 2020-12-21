@@ -11,12 +11,6 @@ public abstract class AbstractTaskList implements Iterable<Task>, Cloneable {
     public abstract ListTypes.types getType();
     public abstract int size();
 
-    final public AbstractTaskList incoming(int from, int to){
-        AbstractTaskList taskList = TaskListFactory.createTaskList(this.getType());
-        Stream <Task> stream = this.getStream();
-        stream.filter(task -> task.nextTimeAfter(from) != -1 && task.nextTimeAfter(from) <= to).forEach(taskList::add);
-        return taskList;
-    }
 
     public Stream<Task> getStream(){
         LinkedList<Task> list = new LinkedList<>();
