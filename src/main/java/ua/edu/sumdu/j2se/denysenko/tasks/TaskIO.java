@@ -48,15 +48,22 @@ public class TaskIO {
         }
     }
 
-    public static void writeBinary(AbstractTaskList tasks, File file) throws IOException {
-        FileOutputStream fileOutputStream = new FileOutputStream(file);
-        write(tasks, fileOutputStream);
-        fileOutputStream.close();
+    public static void writeBinary(AbstractTaskList tasks, File file) {
+        try(FileOutputStream fileOutputStream = new FileOutputStream(file)) {
+            write(tasks, fileOutputStream);
+            fileOutputStream.flush();
+        }
+        catch (IOException e){
+            e.printStackTrace();
+        }
     }
-    public static void readBinary(AbstractTaskList tasks, File file) throws IOException {
-        FileInputStream fileInputStream = new FileInputStream(file);
-        read(tasks, fileInputStream);
-        fileInputStream.close();
+    public static void readBinary(AbstractTaskList tasks, File file) {
+        try(FileInputStream fileInputStream = new FileInputStream(file)) {
+            read(tasks, fileInputStream);
+        }
+        catch (IOException e){
+            e.printStackTrace();
+        }
     }
 
     public static void write(AbstractTaskList tasks, Writer out) throws IOException {
@@ -73,21 +80,27 @@ public class TaskIO {
             tasks.add(task);
         }
     }
-    public static void writeText(AbstractTaskList tasks, File file) throws IOException {
-        Gson gson = new Gson();
-        FileWriter fileWriter = new FileWriter(file);
-        LinkedTaskList taskList = new LinkedTaskList();
-        tasks.getStream().forEach(taskList::add);
-        gson.toJson(taskList, fileWriter);
-        fileWriter.close();
-    }
-    public static void readText(AbstractTaskList tasks, File file) throws IOException {
-        FileReader fileReader = new FileReader(file);
-        Gson gson = new Gson();
-        LinkedTaskList taskList = gson.fromJson(fileReader, LinkedTaskList.class);
-        for (Task task : taskList) {
-            tasks.add(task);
+    public static void writeText(AbstractTaskList tasks, File file) {
+        try(FileWriter fileWriter = new FileWriter(file)) {
+            Gson gson = new Gson();
+            LinkedTaskList taskList = new LinkedTaskList();
+            tasks.getStream().forEach(taskList::add);
+            gson.toJson(taskList, fileWriter);
         }
-        fileReader.close();
+        catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+    public static void readText(AbstractTaskList tasks, File file) {
+        try(FileReader fileReader = new FileReader(file)) {
+            Gson gson = new Gson();
+            LinkedTaskList taskList = gson.fromJson(fileReader, LinkedTaskList.class);
+            for (Task task : taskList) {
+                tasks.add(task);
+            }
+        }
+        catch (IOException e){
+            e.printStackTrace();
+        }
     }
 }
