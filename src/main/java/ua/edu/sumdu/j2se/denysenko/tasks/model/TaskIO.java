@@ -1,7 +1,8 @@
-package ua.edu.sumdu.j2se.denysenko.tasks;
+package ua.edu.sumdu.j2se.denysenko.tasks.model;
 
 
 import com.google.gson.Gson;
+
 import java.io.*;
 import java.time.Instant;
 import java.time.LocalDateTime;
@@ -76,8 +77,9 @@ public class TaskIO {
     public static void read(AbstractTaskList tasks, Reader in){
         Gson gson = new Gson();
         LinkedTaskList taskList = gson.fromJson(in, LinkedTaskList.class);
-        for(Task task: taskList){
-            tasks.add(task);
+        Iterator <Task> it = taskList.iterator();
+        while(it.hasNext()){
+            tasks.add(it.next());
         }
     }
     public static void writeText(AbstractTaskList tasks, File file) {
@@ -95,8 +97,9 @@ public class TaskIO {
         try(FileReader fileReader = new FileReader(file)) {
             Gson gson = new Gson();
             LinkedTaskList taskList = gson.fromJson(fileReader, LinkedTaskList.class);
-            for (Task task : taskList) {
-                tasks.add(task);
+            Iterator <Task> it = taskList.iterator();
+            while(it.hasNext()){
+                tasks.add(it.next());
             }
         }
         catch (IOException e){

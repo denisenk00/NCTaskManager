@@ -1,13 +1,22 @@
-package ua.edu.sumdu.j2se.denysenko.tasks;
+package ua.edu.sumdu.j2se.denysenko.tasks.model;
 
+
+
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
 
 public class Tasks {
     public static Iterable <Task> incoming(Iterable<Task> tasks, LocalDateTime start, LocalDateTime end){
-        return StreamSupport.stream(tasks.spliterator(), false).filter(task -> task.nextTimeAfter(start) != null && !task.nextTimeAfter(start).isAfter(end)).collect(Collectors.toList());
+        Iterator <Task> it = tasks.iterator();
+        LinkedTaskList list = new LinkedTaskList();
+        while(it.hasNext()){
+            Task temp = it.next();
+            if(temp.nextTimeAfter(start) != null && !temp.nextTimeAfter(start).isAfter(end)){
+                list.add(temp);
+            }
+        }
+        return list;
     }
 
     public static SortedMap<LocalDateTime, Set<Task>> calendar (Iterable<Task> tasks, LocalDateTime start, LocalDateTime end){
