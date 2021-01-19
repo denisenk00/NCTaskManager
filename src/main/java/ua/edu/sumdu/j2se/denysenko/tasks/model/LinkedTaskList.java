@@ -1,4 +1,4 @@
-package ua.edu.sumdu.j2se.denysenko.tasks;
+package ua.edu.sumdu.j2se.denysenko.tasks.model;
 
 
 import java.util.Iterator;

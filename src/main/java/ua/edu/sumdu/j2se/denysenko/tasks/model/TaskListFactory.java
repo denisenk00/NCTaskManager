@@ -1,4 +1,5 @@
-package ua.edu.sumdu.j2se.denysenko.tasks;
+package ua.edu.sumdu.j2se.denysenko.tasks.model;
+
 
 public class TaskListFactory {
     public static AbstractTaskList createTaskList(ListTypes.types type){
@@ -13,4 +14,5 @@ public class TaskListFactory {
                 return null;
         }
     }
+
 }

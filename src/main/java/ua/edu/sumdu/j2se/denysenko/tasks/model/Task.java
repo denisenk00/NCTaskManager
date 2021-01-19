@@ -1,4 +1,4 @@
-package ua.edu.sumdu.j2se.denysenko.tasks;
+package ua.edu.sumdu.j2se.denysenko.tasks.model;
 
 
 import java.time.LocalDateTime;
@@ -27,6 +27,9 @@ public class Task implements Cloneable{
     public Task(String title, LocalDateTime start, LocalDateTime end, int interval) throws IllegalArgumentException{
         if(interval <= 0 || title == null || start == null || end == null){
             throw new IllegalArgumentException("The interval must be greater than zero, your interval = " + interval);
+        }
+        if(start.isAfter(end)){
+            throw new IllegalArgumentException("The beginning must be earlier than the end");
         }
         time = cloneLocalDateTime(start);
         this.title = title;
@@ -124,14 +127,12 @@ public class Task implements Cloneable{
 
     @Override
     public String toString() {
-        return "Task{" +
-                "title='" + title + '\'' +
-                ", time=" + time +
-                ", start=" + start +
-                ", end=" + end +
-                ", interval=" + interval +
-                ", active=" + active +
-                '}';
+        return "Title: " + title +
+                "\nTime: " + time +
+                "\nStart: " + start +
+                "\nEnd: " + end +
+                "\nInterval: " + interval +
+                "\nActive: " + active;
     }
 
     @Override
