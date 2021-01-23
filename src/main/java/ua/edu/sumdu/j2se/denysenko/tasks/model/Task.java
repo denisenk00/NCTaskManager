@@ -1,6 +1,5 @@
 package ua.edu.sumdu.j2se.denysenko.tasks.model;
 
-
 import java.time.LocalDateTime;
 import java.util.Objects;
 
