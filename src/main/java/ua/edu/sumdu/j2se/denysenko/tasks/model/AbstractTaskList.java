@@ -9,7 +9,6 @@ public abstract class AbstractTaskList implements Iterable, Cloneable, Serializa
     public abstract void add(Task task);
     public abstract boolean remove(Task task);
     public abstract Task getTask(int index);
-    public abstract ListTypes.types getType();
     public abstract int size();
 
     public Stream<Task> getStream(){

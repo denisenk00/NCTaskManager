@@ -1,7 +1,6 @@
 package ua.edu.sumdu.j2se.denysenko.tasks.model;
 
 import org.apache.log4j.Logger;
-import ua.edu.sumdu.j2se.denysenko.tasks.controller.NotificationController;
 
 import java.util.Iterator;
 import java.util.Set;
