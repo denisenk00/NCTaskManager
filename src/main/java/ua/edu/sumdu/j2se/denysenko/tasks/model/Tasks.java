@@ -1,8 +1,5 @@
 package ua.edu.sumdu.j2se.denysenko.tasks.model;
 
-
-
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.*;
 
@@ -27,7 +24,7 @@ public class Tasks {
             Task a = it.next();
             if(a.isRepeated()){
                 LocalDateTime myDate = a.nextTimeAfter(start);
-                while(!myDate.isAfter(end)){
+                while(!myDate.isAfter(a.getEndTime()) && !myDate.isAfter(end)){
                     if(sortedMap.containsKey(myDate)){
                         sortedMap.get(myDate).add(a);
                     }

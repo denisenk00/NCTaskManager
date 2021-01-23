@@ -1,19 +1,18 @@
 package ua.edu.sumdu.j2se.denysenko.tasks.view;
 
-import ua.edu.sumdu.j2se.denysenko.tasks.model.AbstractTaskList;
+import org.apache.log4j.Logger;
 import ua.edu.sumdu.j2se.denysenko.tasks.model.Task;
-
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.*;
 
-public class ConsoleView {
+public class ConsoleView implements View{
+    private final static Logger logger = Logger.getLogger(ConsoleView.class);
 
     public static void clearScreen() {
         System.out.print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     }
 
-    public void printTaskList(AbstractTaskList list){
+    public void printTaskList(Iterable<Task> list){
         if(list != null) {
             Iterator<Task> it = list.iterator();
             int i = 2;
@@ -21,7 +20,8 @@ public class ConsoleView {
                 Task temp = it.next();
                 if (temp.isActive() && temp.nextTimeAfter(LocalDateTime.now()) != null) {
                     System.out.println(i + " " + temp.getTitle() + "  Date:" + temp.nextTimeAfter(LocalDateTime.now()).toLocalDate()
-                            + "  Time:" + temp.nextTimeAfter(LocalDateTime.now()).toLocalTime() + "  Active:" + temp.isActive());
+                            + "  Time:" + temp.nextTimeAfter(LocalDateTime.now()).toLocalTime() + "  Active:" + temp.isActive() +
+                            "  Repeated: " + temp.isRepeated());
                 } else {
                     if (!temp.isActive()) {
                         System.out.println(i + " " + temp.getTitle() + " Active: " + temp.isActive());
@@ -31,46 +31,55 @@ public class ConsoleView {
                 }
                 i++;
             }
-        }
-        else{
-            System.out.println("No tasks found");
+            logger.info("The task list has been printed");
         }
     }
+
     public void printTaskInfo(Task task){
+        clearScreen();
         System.out.println(task.toString());
+        logger.info("Task info has been printed");
     }
-    public void printCalendar(SortedMap<LocalDateTime, Set<Task>> map){
+
+    public void printCalendar(SortedMap<LocalDateTime, Set<Task>> map) {
         clearScreen();
         System.out.println("Calendar for week");
-        LocalDate oldKey = LocalDate.of(2020, 01, 10);
+        LocalDateTime oldKey = LocalDateTime.now();
         for (Map.Entry<LocalDateTime, Set<Task>> entry : map.entrySet()) {
-            if(!oldKey.equals(entry.getKey().toLocalDate())) {
+            if (!oldKey.toLocalDate().equals(entry.getKey().toLocalDate())) {
                 System.out.println("\nDate" + " " + entry.getKey().toLocalDate().toString() + ":");
             }
-            entry.getValue().stream().forEach(a -> {
-                        System.out.println("\t" + a.getTitle() + "  Time:" + a.nextTimeAfter(LocalDateTime.now()).toLocalTime());
-            });
-            oldKey = entry.getKey().toLocalDate();
+            Iterator<Task> it = entry.getValue().iterator();
+            while (it.hasNext()) {
+                Task a = it.next();
+                System.out.println("\t" + a.getTitle() + "  Time:" + a.nextTimeAfter(oldKey).toLocalTime());//NULLPOINTER
+            }
+            oldKey = entry.getKey();
         }
-        System.out.println("\nIf you want to go back, press any key...");
-        getUserInput();
+        logger.info("Calendar for week has been printed");
     }
+
     public void printTasksOption(boolean active){
-        clearScreen();
-        System.out.println("0 edit");
+        System.out.println("\n0 edit");
         if(active) System.out.println("1 deactivate");
         else System.out.println("1 activate");
         System.out.println("2 delete");
         System.out.println("3 go back");
+        logger.info("Task options have been printed");
     }
+
     public void printMainMenu(){
         clearScreen();
         System.out.println("0 add task\n1 calendar for week\n2 task list\n3 exit");
+        logger.info("Main menu has been printed");
     }
+
     public void printListMenu(){
         clearScreen();
         System.out.println("All tasks:\n0 go back\n1 filter tasks");
+        logger.info("List menu has been printed");
     }
+
     public int getUserInput(){
         Scanner scanner = new Scanner(System.in);
         while (!scanner.hasNextInt()){
@@ -78,6 +87,7 @@ public class ConsoleView {
         }
         return scanner.nextInt();
     }
+
     public String getTitle(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter new title without spaces: ");
@@ -128,6 +138,7 @@ public class ConsoleView {
         builder.append(scanner.nextInt());
         return builder.toString();
     }
+
     public String getInterval(){
         clearScreen();
         Scanner scanner = new Scanner(System.in);
@@ -148,6 +159,7 @@ public class ConsoleView {
         builder.append(s);
         return builder.toString();
     }
+
     public String inputTime(boolean repeated){
         Scanner scanner = new Scanner(System.in);
         StringBuilder builder = new StringBuilder();
@@ -170,7 +182,7 @@ public class ConsoleView {
             while (!scanner.hasNextInt()){
                 scanner.next();
             }
-            builder.append(scanner.nextInt() + " ");
+            builder.append(scanner.nextInt());
             scanner.nextLine();
         }
         else{
@@ -187,12 +199,13 @@ public class ConsoleView {
     public void editField(boolean repeated, String info){
         clearScreen();
         System.out.println(info);
-        System.out.println("What do you want to change?\n0 Title");
+        System.out.println("\nWhat do you want to change?\n0 Title");
         if(repeated){
             System.out.println("1 Start time, End time,  Interval\n2 go back");
         }
         else{
             System.out.println("1 Time\n2 go back");
         }
+        logger.info("Edit menu has been printed");
     }
 }

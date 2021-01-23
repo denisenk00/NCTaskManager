@@ -1,10 +1,8 @@
 package ua.edu.sumdu.j2se.denysenko.tasks.model;
 
 import java.io.Serializable;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.Set;
 import java.util.stream.Stream;
 
 public abstract class AbstractTaskList implements Iterable, Cloneable, Serializable {
@@ -14,7 +12,6 @@ public abstract class AbstractTaskList implements Iterable, Cloneable, Serializa
     public abstract ListTypes.types getType();
     public abstract int size();
 
-
     public Stream<Task> getStream(){
         LinkedList<Task> list = new LinkedList<>();
         Iterator<Task> it = iterator();
@@ -23,6 +20,7 @@ public abstract class AbstractTaskList implements Iterable, Cloneable, Serializa
         }
         return list.stream();
     }
+
     public int getTaskIndex(Task task){
         Iterator<Task> it = iterator();
         int i = 0;
@@ -32,15 +30,4 @@ public abstract class AbstractTaskList implements Iterable, Cloneable, Serializa
         }
         return -1;
     }
-    public Set<Task> toSet(){
-        Set<Task> set = new HashSet<>();
-        Iterator <Task> it = iterator();
-        while(it.hasNext()){
-            set.add(it.next());
-        }
-        return set;
-    }
-
-
-
 }
