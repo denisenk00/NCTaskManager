@@ -1,9 +1,7 @@
 package ua.edu.sumdu.j2se.denysenko.tasks.model;
 
-
 import java.util.Iterator;
 import java.util.Objects;
-
 
 public class LinkedTaskList extends AbstractTaskList {
     private class ListElement{
@@ -13,7 +11,6 @@ public class LinkedTaskList extends AbstractTaskList {
     private ListElement head;
     private ListElement tail;
     private int size = 0;
-
 
     public void add(Task task){
         ListElement x = new ListElement();
@@ -166,11 +163,5 @@ public class LinkedTaskList extends AbstractTaskList {
         }
         return result;
     }
-
-    @Override
-    public ListTypes.types getType(){
-        return ListTypes.types.LINKED;
-    }
-
 
 }

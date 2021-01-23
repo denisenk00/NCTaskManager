@@ -59,6 +59,7 @@ public class TaskIO {
             e.printStackTrace();
         }
     }
+
     public static void readBinary(AbstractTaskList tasks, File file) {
         try(FileInputStream fileInputStream = new FileInputStream(file)) {
             read(tasks, fileInputStream);
