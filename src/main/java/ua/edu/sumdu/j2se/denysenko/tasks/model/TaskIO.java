@@ -28,6 +28,7 @@ public class TaskIO {
             }
         }
     }
+
     public static void read(AbstractTaskList tasks, InputStream in) throws IOException {
         DataInput dataInput = new DataInputStream(in);
         int size = dataInput.readInt();
@@ -74,6 +75,7 @@ public class TaskIO {
         gson.toJson(taskList, out);
         out.flush();
     }
+
     public static void read(AbstractTaskList tasks, Reader in){
         Gson gson = new Gson();
         LinkedTaskList taskList = gson.fromJson(in, LinkedTaskList.class);
@@ -82,6 +84,7 @@ public class TaskIO {
             tasks.add(it.next());
         }
     }
+
     public static void writeText(AbstractTaskList tasks, File file) {
         try(FileWriter fileWriter = new FileWriter(file)) {
             Gson gson = new Gson();
@@ -93,6 +96,7 @@ public class TaskIO {
             e.printStackTrace();
         }
     }
+
     public static void readText(AbstractTaskList tasks, File file) {
         try(FileReader fileReader = new FileReader(file)) {
             Gson gson = new Gson();
