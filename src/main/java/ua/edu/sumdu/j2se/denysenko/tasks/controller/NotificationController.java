@@ -37,7 +37,7 @@ public class NotificationController {
         logger.info("Created new timers");
     }
 
-    public void clearTimer(){
+    private void clearTimer(){
         Iterator<Timer> it = timerList.listIterator();
         while (it.hasNext()){
             it.next().cancel();

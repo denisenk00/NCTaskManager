@@ -77,7 +77,7 @@ public class Controller {
         boolean repeated = task.isRepeated();
         int input = 0;
         while(input != 2){
-            view.editField(repeated, task.toString());
+            view.printEditMenu(repeated, task.toString());
             input = view.getUserInput();
             logger.info("Getting user input. Result: " + input);
             switch (input){

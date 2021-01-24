@@ -19,7 +19,7 @@ public class TimerTask extends java.util.TimerTask {
         logger.info("Notification was been printed");
     }
 
-    public void printMessage(Set<Task> set){
+    private void printMessage(Set<Task> set){
         System.out.println("\nTime to execute such tasks:");
         Iterator<Task> it = set.iterator();
         while (it.hasNext()){
