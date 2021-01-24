@@ -196,7 +196,7 @@ public class ConsoleView implements View{
         return builder.toString();
     }
 
-    public void editField(boolean repeated, String info){
+    public void printEditMenu(boolean repeated, String info){
         clearScreen();
         System.out.println(info);
         System.out.println("\nWhat do you want to change?\n0 Title");

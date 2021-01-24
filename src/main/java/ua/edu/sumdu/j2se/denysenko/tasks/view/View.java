@@ -8,9 +8,9 @@ import java.util.SortedMap;
 
 public interface View {
     void printTaskList(Iterable<Task> list);
-    void printTaskInfo(Task task);
     void printCalendar(SortedMap<LocalDateTime, Set<Task>> map);
     String inputTask();
-    String getInterval();
-    String inputTime(boolean repeated);
+    void printMainMenu();
+    void printListMenu();
+    void printEditMenu(boolean repeated, String info);
 }
