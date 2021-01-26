@@ -28,7 +28,6 @@ public class Controller {
             LocalDateTime to = LocalDateTime.parse(interval[1]);
             if(from.isAfter(to)){
                 logger.warn("Time period entered incorrectly");
-                System.err.println("Time period entered incorrectly");
             }
             else {
                 Iterator<Task> it = Tasks.incoming(model, from, to).iterator();
@@ -41,7 +40,6 @@ public class Controller {
             }
         }
         catch (Exception e){
-            System.err.println("Entered data is incorrect");
             logger.error("Entered data is incorrect");
         }
         return null;
@@ -64,11 +62,9 @@ public class Controller {
             logger.info("Added new task");
         }
         catch (IllegalArgumentException e){
-            System.err.println(e.getMessage());
             logger.error("Entered data is incorrect");
         }
         catch (Exception e){
-            System.err.println("Entered data is incorrect");
             logger.error("Entered data is incorrect");
         }
     }
@@ -97,7 +93,6 @@ public class Controller {
                     }
                     catch (DateTimeParseException e){
                         logger.error("String was not parsed to LocalDateTime");
-                        System.err.println("Entered data is incorrect");
                     }
                     break;
             }

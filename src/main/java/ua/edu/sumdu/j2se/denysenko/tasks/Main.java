@@ -41,7 +41,6 @@ public class Main {
 		}
 		catch (IOException e) {
 			logger.error("IOException, while creating new file");
-			System.err.println("IOException, while creating new file");
 		}
 		TaskIO.writeBinary(model, data);
 		logger.info("Data has been written to a file data.txt");
