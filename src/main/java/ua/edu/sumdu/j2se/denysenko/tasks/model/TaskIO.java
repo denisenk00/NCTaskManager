@@ -1,6 +1,5 @@
 package ua.edu.sumdu.j2se.denysenko.tasks.model;
 
-
 import com.google.gson.Gson;
 
 import java.io.*;
