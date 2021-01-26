@@ -49,13 +49,18 @@ public class Controller {
         try {
             if (s.startsWith("1")) {
                 String parameters[] = s.split(" ", 6);
-                Task task = new Task(parameters[1], LocalDateTime.parse(parameters[2]), LocalDateTime.parse(parameters[3]),
-                        Integer.parseInt(parameters[4]));
+                String title = parameters[1];
+                LocalDateTime start = LocalDateTime.parse(parameters[2]);
+                LocalDateTime end = LocalDateTime.parse(parameters[3]);
+                int interval = Integer.parseInt(parameters[4]);
+                Task task = new Task(title, start, end, interval);
                 if (s.endsWith("1")) task.setActive(true);
                 model.add(task);
             } else {
                 String parameters[] = s.split(" ", 4);
-                Task task = new Task(parameters[1], LocalDateTime.parse(parameters[2]));
+                String title = parameters[1];
+                LocalDateTime time = LocalDateTime.parse(parameters[2]);
+                Task task = new Task(title, time);
                 if (s.endsWith("1")) task.setActive(true);
                 model.add(task);
             }
@@ -85,9 +90,13 @@ public class Controller {
                     String param[] = view.inputTime(repeated).split(" ", 3);
                     try {
                         if (repeated) {
-                            task.setTime(LocalDateTime.parse(param[0]), LocalDateTime.parse(param[1]), Integer.parseInt(param[2]));
+                            LocalDateTime start = LocalDateTime.parse(param[0]);
+                            LocalDateTime end = LocalDateTime.parse(param[1]);
+                            int interval = Integer.parseInt(param[2]);
+                            task.setTime(start, end, interval);
                         } else {
-                            task.setTime(LocalDateTime.parse(param[0]));
+                            LocalDateTime time = LocalDateTime.parse(param[0]);
+                            task.setTime(time);
                         }
                         logger.info("Time was changed");
                     }
