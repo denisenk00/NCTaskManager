@@ -103,7 +103,7 @@ public class ConsoleView implements View{
         String title = scanner.nextLine();
         System.out.println("The task is repeated? 1 if so, otherwise 0: ");
         int repeated = scanner.nextInt();
-        builder.append(repeated + " " + title + " ");
+        builder.append(repeated).append(" ").append(title).append(" ");
         scanner.nextLine();
         String pattern = "\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}";
         String pattern2 = "\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}";
@@ -113,18 +113,18 @@ public class ConsoleView implements View{
             while (!s.matches(pattern) && !s.matches(pattern2)) {
                 s = scanner.nextLine();
             }
-            builder.append(s + " ");
+            builder.append(s).append(" ");
             System.out.println("Enter end time in format 2007-12-03T10:15:30: ");
             s = scanner.nextLine();
             while (!s.matches(pattern) && !s.matches(pattern2)) {
                 s = scanner.nextLine();
             }
-            builder.append(s + " ");
+            builder.append(s).append(" ");
             System.out.println("Enter interval in seconds: ");
             while (!scanner.hasNextInt()) {
                 scanner.next();
             }
-            builder.append(scanner.nextInt() + " ");
+            builder.append(scanner.nextInt()).append(" ");
             scanner.nextLine();
         } else {
             System.out.println("Enter time in format 2007-12-03T10:15:30: ");
@@ -132,7 +132,7 @@ public class ConsoleView implements View{
             while (!s.matches(pattern) && !s.matches(pattern2)) {
                 s = scanner.nextLine();
             }
-            builder.append(s + " ");
+            builder.append(s).append(" ");
         }
         System.out.println("Do you want to activate the task? 1 if so, otherwise 0: ");
         builder.append(scanner.nextInt());
@@ -150,7 +150,7 @@ public class ConsoleView implements View{
         while(!s.matches(pattern) && !s.matches(pattern2)) {
             s = scanner.nextLine();
         }
-        builder.append(s + " ");
+        builder.append(s).append(" ");
         System.out.println("Enter end time in format 2007-12-03T10:15:30: ");
         s = scanner.nextLine();
         while(!s.matches(pattern) && !s.matches(pattern2)) {
@@ -171,13 +171,13 @@ public class ConsoleView implements View{
             while(!s.matches(pattern) && !s.matches(pattern2)) {
                 s = scanner.nextLine();
             }
-            builder.append(s + " ");
+            builder.append(s).append(" ");
             System.out.println("Enter end time in format 2007-12-03T10:15:30: ");
             s = scanner.nextLine();
             while(!s.matches(pattern) && !s.matches(pattern2)) {
                 s = scanner.nextLine();
             }
-            builder.append(s + " ");
+            builder.append(s).append(" ");
             System.out.println("Enter interval in seconds: ");
             while (!scanner.hasNextInt()){
                 scanner.next();
@@ -191,7 +191,7 @@ public class ConsoleView implements View{
             while(!s.matches(pattern) && !s.matches(pattern2)) {
                 s = scanner.nextLine();
             }
-            builder.append(s + " ");
+            builder.append(s).append(" ");
         }
         return builder.toString();
     }
