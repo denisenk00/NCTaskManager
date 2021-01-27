@@ -2,6 +2,7 @@ package ua.edu.sumdu.j2se.denysenko.tasks.controller;
 
 import org.apache.log4j.Logger;
 import ua.edu.sumdu.j2se.denysenko.tasks.Main;
+import ua.edu.sumdu.j2se.denysenko.tasks.model.AbstractTaskList;
 import ua.edu.sumdu.j2se.denysenko.tasks.model.LinkedTaskList;
 import ua.edu.sumdu.j2se.denysenko.tasks.model.Task;
 import ua.edu.sumdu.j2se.denysenko.tasks.model.Tasks;
@@ -12,11 +13,11 @@ import java.time.format.DateTimeParseException;
 import java.util.Iterator;
 
 public class Controller {
-    private LinkedTaskList model;
+    private AbstractTaskList model;
     private ConsoleView view;
     private final static Logger logger = Logger.getLogger(Controller.class);
 
-    public Controller(LinkedTaskList model, ConsoleView view) {
+    public Controller(AbstractTaskList model, ConsoleView view) {
         this.model = model;
         this.view = view;
     }
@@ -55,19 +56,26 @@ public class Controller {
                 int interval = Integer.parseInt(parameters[4]);
                 Task task = new Task(title, start, end, interval);
                 if (s.endsWith("1")) task.setActive(true);
-                model.add(task);
+                if(end.isBefore(LocalDateTime.now())){
+                    view.printTaskMessage();
+                }
+                else{
+                    model.add(task);
+                }
             } else {
                 String parameters[] = s.split(" ", 4);
                 String title = parameters[1];
                 LocalDateTime time = LocalDateTime.parse(parameters[2]);
                 Task task = new Task(title, time);
                 if (s.endsWith("1")) task.setActive(true);
-                model.add(task);
+                if(time.isBefore(LocalDateTime.now())){
+                    view.printTaskMessage();
+                }
+                else{
+                    model.add(task);
+                }
             }
             logger.info("Added new task");
-        }
-        catch (IllegalArgumentException e){
-            logger.error("Entered data is incorrect");
         }
         catch (Exception e){
             logger.error("Entered data is incorrect");
@@ -138,7 +146,7 @@ public class Controller {
         }
     }
 
-    private void listMenu(LinkedTaskList list){
+    private void listMenu(AbstractTaskList list){
         int input = 1;
         while(input != 0){
             view.printListMenu();

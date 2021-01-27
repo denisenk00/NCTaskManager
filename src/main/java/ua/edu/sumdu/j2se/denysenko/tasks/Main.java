@@ -20,9 +20,9 @@ public class Main {
 
 	public static void main(String []args) {
 	    logger.info("Start of the program ===================");
-		LinkedTaskList model = new LinkedTaskList();
+		AbstractTaskList model = new LinkedTaskList();
 		ConsoleView view = new ConsoleView();
-		data = new File("B://Lessons//NC//Main_Project//NCTaskManager//src//main//resources", "data.txt");
+		data = new File("src\\main\\resources\\data.txt");
 		TaskIO.readBinary(model, data);
 		logger.info("Data from the file data.txt has been read");
 		Controller controller = new Controller(model, view);
