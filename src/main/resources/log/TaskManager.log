@@ -392,3 +392,100 @@
 2021-01-27 12:59:38 INFO  Main:40 - New file data.txt created
 2021-01-27 12:59:38 INFO  Main:46 - Data has been written to a file data.txt
 2021-01-27 12:59:38 INFO  Controller:134 - Terminating the program ============
+2021-01-27 18:24:40 INFO  Main:22 - Start of the program ===================
+2021-01-27 18:24:42 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-27 18:24:42 INFO  NotificationController:21 - Timers were canceled
+2021-01-27 18:24:42 INFO  NotificationController:35 - Created new timers
+2021-01-27 18:24:42 INFO  Main:51 - Restarted the notification subsystem
+2021-01-27 18:24:42 INFO  Main:31 - Go to main menu
+2021-01-27 18:24:42 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-27 18:25:31 INFO  Main:22 - Start of the program ===================
+2021-01-27 18:25:31 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-27 18:25:31 INFO  NotificationController:21 - Timers were canceled
+2021-01-27 18:25:31 INFO  NotificationController:35 - Created new timers
+2021-01-27 18:25:31 INFO  Main:51 - Restarted the notification subsystem
+2021-01-27 18:25:31 INFO  Main:31 - Go to main menu
+2021-01-27 18:25:31 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-27 18:28:44 INFO  Main:22 - Start of the program ===================
+2021-01-27 18:28:44 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-27 18:28:44 INFO  NotificationController:21 - Timers were canceled
+2021-01-27 18:28:44 INFO  NotificationController:35 - Created new timers
+2021-01-27 18:28:44 INFO  Main:51 - Restarted the notification subsystem
+2021-01-27 18:28:44 INFO  Main:31 - Go to main menu
+2021-01-27 18:28:44 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-27 18:30:51 INFO  Main:22 - Start of the program ===================
+2021-01-27 18:30:52 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-27 18:30:52 INFO  NotificationController:21 - Timers were canceled
+2021-01-27 18:30:54 INFO  NotificationController:35 - Created new timers
+2021-01-27 18:30:54 INFO  Main:51 - Restarted the notification subsystem
+2021-01-27 18:30:54 INFO  Main:31 - Go to main menu
+2021-01-27 18:30:54 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-27 18:30:59 INFO  Controller:117 - Getting user input. Result: 2
+2021-01-27 18:30:59 INFO  Controller:130 - Go to list all tasks
+2021-01-27 18:30:59 INFO  ConsoleView:80 - List menu has been printed
+2021-01-27 18:30:59 INFO  ConsoleView:34 - The task list has been printed
+2021-01-27 18:31:30 INFO  TimerTask:19 - Notification was been printed
+2021-01-27 18:33:00 INFO  TimerTask:19 - Notification was been printed
+2021-01-27 18:34:30 INFO  TimerTask:19 - Notification was been printed
+2021-01-27 18:36:00 INFO  TimerTask:19 - Notification was been printed
+2021-01-27 18:37:30 INFO  TimerTask:19 - Notification was been printed
+2021-01-27 18:39:00 INFO  TimerTask:19 - Notification was been printed
+2021-01-27 18:40:30 INFO  TimerTask:19 - Notification was been printed
+2021-01-27 18:42:00 INFO  TimerTask:19 - Notification was been printed
+2021-01-27 18:43:01 INFO  Controller:148 - Getting user input. Result: 6
+2021-01-27 18:43:01 INFO  Controller:157 - Selected a task
+2021-01-27 18:43:01 INFO  ConsoleView:41 - Task info has been printed
+2021-01-27 18:43:01 INFO  ConsoleView:68 - Task options have been printed
+2021-01-27 18:43:13 INFO  Controller:168 - Getting user input. Result: 3
+2021-01-27 18:43:13 INFO  ConsoleView:80 - List menu has been printed
+2021-01-27 18:43:13 INFO  ConsoleView:34 - The task list has been printed
+2021-01-27 18:43:14 INFO  Controller:148 - Getting user input. Result: 0
+2021-01-27 18:43:14 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-27 18:43:16 INFO  Controller:117 - Getting user input. Result: 1
+2021-01-27 18:43:16 INFO  Controller:126 - Go to calendar for week
+2021-01-27 18:43:18 INFO  ConsoleView:59 - Calendar for week has been printed
+2021-01-27 18:43:18 INFO  ConsoleView:34 - The task list has been printed
+2021-01-27 18:43:30 INFO  TimerTask:19 - Notification was been printed
+2021-01-27 18:43:37 INFO  Controller:204 - Getting user input. Result: 3
+2021-01-27 18:43:37 INFO  Controller:211 - Selected a task
+2021-01-27 18:43:37 INFO  ConsoleView:41 - Task info has been printed
+2021-01-27 18:43:37 INFO  ConsoleView:68 - Task options have been printed
+2021-01-27 18:43:38 INFO  Controller:168 - Getting user input. Result: 1
+2021-01-27 18:43:38 INFO  Controller:179 - Task has been deactivated
+2021-01-27 18:43:38 INFO  NotificationController:21 - Timers were canceled
+2021-01-27 18:43:38 INFO  NotificationController:35 - Created new timers
+2021-01-27 18:43:38 INFO  Main:51 - Restarted the notification subsystem
+2021-01-27 18:43:38 INFO  ConsoleView:59 - Calendar for week has been printed
+2021-01-27 18:43:38 INFO  ConsoleView:34 - The task list has been printed
+2021-01-27 18:43:44 INFO  Controller:204 - Getting user input. Result: 1
+2021-01-27 18:43:44 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-27 18:43:47 INFO  Controller:117 - Getting user input. Result: 3
+2021-01-27 18:43:47 INFO  Main:37 - File data.txt has been deleted
+2021-01-27 18:43:47 INFO  Main:40 - New file data.txt created
+2021-01-27 18:43:47 INFO  Main:46 - Data has been written to a file data.txt
+2021-01-27 18:43:47 INFO  Controller:135 - Terminating the program ============
+2021-01-27 19:02:23 INFO  Main:22 - Start of the program ===================
+2021-01-27 19:02:23 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-27 19:02:23 INFO  NotificationController:21 - Timers were canceled
+2021-01-27 19:02:23 INFO  NotificationController:35 - Created new timers
+2021-01-27 19:02:23 INFO  Main:51 - Restarted the notification subsystem
+2021-01-27 19:02:23 INFO  Main:31 - Go to main menu
+2021-01-27 19:02:23 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-27 19:02:32 INFO  Controller:124 - Getting user input. Result: 0
+2021-01-27 19:03:02 INFO  Controller:128 - Got info about new task
+2021-01-27 19:03:02 INFO  Controller:78 - Added new task
+2021-01-27 19:03:02 INFO  NotificationController:21 - Timers were canceled
+2021-01-27 19:03:02 INFO  NotificationController:35 - Created new timers
+2021-01-27 19:03:02 INFO  Main:51 - Restarted the notification subsystem
+2021-01-27 19:03:02 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-27 19:03:15 INFO  Controller:124 - Getting user input. Result: 2
+2021-01-27 19:03:15 INFO  Controller:137 - Go to list all tasks
+2021-01-27 19:03:15 INFO  ConsoleView:80 - List menu has been printed
+2021-01-27 19:03:15 INFO  ConsoleView:34 - The task list has been printed
+2021-01-27 19:03:27 INFO  Controller:155 - Getting user input. Result: 0
+2021-01-27 19:03:27 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-27 19:03:36 INFO  Controller:124 - Getting user input. Result: 3
+2021-01-27 19:03:36 INFO  Main:37 - File data.txt has been deleted
+2021-01-27 19:03:36 INFO  Main:40 - New file data.txt created
+2021-01-27 19:03:36 INFO  Main:46 - Data has been written to a file data.txt
+2021-01-27 19:03:36 INFO  Controller:142 - Terminating the program ============

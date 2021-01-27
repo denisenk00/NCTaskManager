@@ -1,20 +1,18 @@
 package ua.edu.sumdu.j2se.denysenko.tasks.controller;
 
 import org.apache.log4j.Logger;
-import ua.edu.sumdu.j2se.denysenko.tasks.model.LinkedTaskList;
-import ua.edu.sumdu.j2se.denysenko.tasks.model.Task;
-import ua.edu.sumdu.j2se.denysenko.tasks.model.Tasks;
+import ua.edu.sumdu.j2se.denysenko.tasks.model.*;
 import ua.edu.sumdu.j2se.denysenko.tasks.model.TimerTask;
 
 import java.time.LocalDateTime;
 import java.util.*;
 
 public class NotificationController {
-    private LinkedTaskList model;
+    private AbstractTaskList model;
     private List<Timer> timerList = new LinkedList<>();
     private final static Logger logger = Logger.getLogger(NotificationController.class);
 
-    public NotificationController(LinkedTaskList model) {
+    public NotificationController(AbstractTaskList model) {
         this.model = model;
     }
 

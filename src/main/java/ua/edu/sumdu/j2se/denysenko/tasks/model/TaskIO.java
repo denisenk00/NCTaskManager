@@ -1,6 +1,8 @@
 package ua.edu.sumdu.j2se.denysenko.tasks.model;
 
 import com.google.gson.Gson;
+import org.apache.log4j.Logger;
+import ua.edu.sumdu.j2se.denysenko.tasks.controller.NotificationController;
 
 import java.io.*;
 import java.time.Instant;
@@ -9,6 +11,8 @@ import java.time.ZoneId;
 import java.util.Iterator;
 
 public class TaskIO {
+    private final static Logger logger = Logger.getLogger(TaskIO.class);
+
     public static void write(AbstractTaskList tasks, OutputStream out) throws IOException {
         DataOutput dataOutput = new DataOutputStream(out);
         dataOutput.writeInt(tasks.size());
@@ -55,7 +59,7 @@ public class TaskIO {
             fileOutputStream.flush();
         }
         catch (IOException e){
-            e.printStackTrace();
+            logger.error("IOException, while writing the text to a file");
         }
     }
 
@@ -64,7 +68,7 @@ public class TaskIO {
             read(tasks, fileInputStream);
         }
         catch (IOException e){
-            e.printStackTrace();
+            logger.error("IOException, while reading the text from a file");
         }
     }
 
@@ -93,7 +97,7 @@ public class TaskIO {
             gson.toJson(taskList, fileWriter);
         }
         catch (IOException e){
-            e.printStackTrace();
+            logger.error("IOException, while writing the text to a file");
         }
     }
 
@@ -107,7 +111,7 @@ public class TaskIO {
             }
         }
         catch (IOException e){
-            e.printStackTrace();
+            logger.error("IOException, while reading the text from a file");
         }
     }
 }

@@ -208,4 +208,8 @@ public class ConsoleView implements View{
         }
         logger.info("Edit menu has been printed");
     }
+
+    public void printTaskMessage(){
+        System.out.println("You cannot add a task in the past");
+    }
 }
