@@ -373,3 +373,22 @@
 2021-01-26 22:05:40 INFO  Main:40 - New file data.txt created
 2021-01-26 22:05:40 INFO  Main:46 - Data has been written to a file data.txt
 2021-01-26 22:05:40 INFO  Controller:134 - Terminating the program ============
+2021-01-27 12:58:15 INFO  Main:22 - Start of the program ===================
+2021-01-27 12:58:15 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-27 12:58:15 INFO  NotificationController:23 - Timers were canceled
+2021-01-27 12:58:29 INFO  NotificationController:37 - Created new timers
+2021-01-27 12:58:29 INFO  Main:51 - Restarted the notification subsystem
+2021-01-27 12:58:29 INFO  Main:31 - Go to main menu
+2021-01-27 12:58:29 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-27 12:58:30 INFO  TimerTask:19 - Notification was been printed
+2021-01-27 12:59:22 INFO  Controller:116 - Getting user input. Result: 2
+2021-01-27 12:59:22 INFO  Controller:129 - Go to list all tasks
+2021-01-27 12:59:22 INFO  ConsoleView:80 - List menu has been printed
+2021-01-27 12:59:22 INFO  ConsoleView:34 - The task list has been printed
+2021-01-27 12:59:36 INFO  Controller:147 - Getting user input. Result: 0
+2021-01-27 12:59:36 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-27 12:59:38 INFO  Controller:116 - Getting user input. Result: 3
+2021-01-27 12:59:38 INFO  Main:37 - File data.txt has been deleted
+2021-01-27 12:59:38 INFO  Main:40 - New file data.txt created
+2021-01-27 12:59:38 INFO  Main:46 - Data has been written to a file data.txt
+2021-01-27 12:59:38 INFO  Controller:134 - Terminating the program ============
