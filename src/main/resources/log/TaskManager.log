@@ -489,3 +489,444 @@
 2021-01-27 19:03:36 INFO  Main:40 - New file data.txt created
 2021-01-27 19:03:36 INFO  Main:46 - Data has been written to a file data.txt
 2021-01-27 19:03:36 INFO  Controller:142 - Terminating the program ============
+2021-01-29 15:34:54 INFO  Main:22 - Start of the program ===================
+2021-01-29 15:34:54 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 15:34:54 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 15:34:54 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 15:34:54 INFO  NotificationController:35 - Created new timers
+2021-01-29 15:34:54 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 15:34:54 INFO  Main:31 - Go to main menu
+2021-01-29 15:34:54 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 15:35:14 INFO  Main:22 - Start of the program ===================
+2021-01-29 15:35:14 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 15:35:14 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 15:35:14 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 15:35:14 INFO  NotificationController:35 - Created new timers
+2021-01-29 15:35:14 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 15:35:14 INFO  Main:31 - Go to main menu
+2021-01-29 15:35:14 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 15:35:22 INFO  Main:22 - Start of the program ===================
+2021-01-29 15:35:22 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 15:35:22 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 15:35:22 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 15:35:22 INFO  NotificationController:35 - Created new timers
+2021-01-29 15:35:22 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 15:35:22 INFO  Main:31 - Go to main menu
+2021-01-29 15:35:22 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 15:35:41 INFO  Main:22 - Start of the program ===================
+2021-01-29 15:35:41 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 15:35:41 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 15:35:41 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 15:35:41 INFO  NotificationController:35 - Created new timers
+2021-01-29 15:35:41 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 15:35:41 INFO  Main:31 - Go to main menu
+2021-01-29 15:35:41 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 15:37:13 INFO  Main:22 - Start of the program ===================
+2021-01-29 15:37:13 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 15:37:13 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 15:37:13 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 15:37:13 INFO  NotificationController:35 - Created new timers
+2021-01-29 15:37:13 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 15:37:13 INFO  Main:31 - Go to main menu
+2021-01-29 15:37:13 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 15:49:47 INFO  Main:22 - Start of the program ===================
+2021-01-29 15:49:47 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 15:49:47 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 15:49:47 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 15:49:47 INFO  NotificationController:35 - Created new timers
+2021-01-29 15:49:47 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 15:49:47 INFO  Main:31 - Go to main menu
+2021-01-29 15:49:47 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 15:51:50 INFO  Main:22 - Start of the program ===================
+2021-01-29 15:51:50 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 15:51:50 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 15:51:50 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 15:51:50 INFO  NotificationController:35 - Created new timers
+2021-01-29 15:51:50 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 15:51:50 INFO  Main:31 - Go to main menu
+2021-01-29 15:51:50 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:11:54 INFO  Main:22 - Start of the program ===================
+2021-01-29 16:11:54 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 16:11:54 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 16:11:54 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:11:55 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:11:55 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:11:55 INFO  Main:31 - Go to main menu
+2021-01-29 16:11:55 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:12:07 INFO  Controller:124 - Getting user input. Result: 2
+2021-01-29 16:12:07 INFO  Controller:137 - Go to list all tasks
+2021-01-29 16:12:07 INFO  ConsoleView:80 - List menu has been printed
+2021-01-29 16:12:07 INFO  ConsoleView:34 - The task list has been printed
+2021-01-29 16:12:16 INFO  Controller:155 - Getting user input. Result: 0
+2021-01-29 16:12:16 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:12:26 INFO  Controller:124 - Getting user input. Result: 0
+2021-01-29 16:12:47 INFO  Controller:128 - Got info about new task
+2021-01-29 16:12:47 INFO  Controller:78 - Added new task
+2021-01-29 16:12:47 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:12:47 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:12:47 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:12:47 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:12:49 INFO  Controller:124 - Getting user input. Result: 2
+2021-01-29 16:12:49 INFO  Controller:137 - Go to list all tasks
+2021-01-29 16:12:49 INFO  ConsoleView:80 - List menu has been printed
+2021-01-29 16:12:49 INFO  ConsoleView:34 - The task list has been printed
+2021-01-29 16:13:13 INFO  Controller:155 - Getting user input. Result: 0
+2021-01-29 16:13:13 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:13:51 INFO  Main:22 - Start of the program ===================
+2021-01-29 16:13:51 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 16:13:51 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 16:13:51 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:13:52 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:13:52 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:13:52 INFO  Main:31 - Go to main menu
+2021-01-29 16:13:52 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:13:54 INFO  Controller:124 - Getting user input. Result: 2
+2021-01-29 16:13:54 INFO  Controller:137 - Go to list all tasks
+2021-01-29 16:13:54 INFO  ConsoleView:80 - List menu has been printed
+2021-01-29 16:13:54 INFO  ConsoleView:34 - The task list has been printed
+2021-01-29 16:13:57 INFO  Controller:155 - Getting user input. Result: 0
+2021-01-29 16:13:57 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:13:58 INFO  Controller:124 - Getting user input. Result: 3
+2021-01-29 16:13:58 INFO  Main:37 - File data.txt has been deleted
+2021-01-29 16:13:58 ERROR Main:43 - IOException, while creating new file
+2021-01-29 16:13:58 ERROR TaskIO:62 - IOException, while writing the text to a file
+2021-01-29 16:13:58 INFO  Main:46 - Data has been written to a file data.txt
+2021-01-29 16:13:58 INFO  Controller:142 - Terminating the program ============
+2021-01-29 16:16:08 INFO  Main:22 - Start of the program ===================
+2021-01-29 16:16:08 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 16:16:08 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:16:08 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:16:08 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:16:08 INFO  Main:31 - Go to main menu
+2021-01-29 16:16:08 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:16:53 INFO  Controller:124 - Getting user input. Result: 2
+2021-01-29 16:16:53 INFO  Controller:137 - Go to list all tasks
+2021-01-29 16:16:53 INFO  ConsoleView:80 - List menu has been printed
+2021-01-29 16:16:53 INFO  ConsoleView:34 - The task list has been printed
+2021-01-29 16:17:06 INFO  Controller:155 - Getting user input. Result: 0
+2021-01-29 16:17:06 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:18:15 INFO  Controller:124 - Getting user input. Result: 1
+2021-01-29 16:18:15 INFO  Controller:133 - Go to calendar for week
+2021-01-29 16:18:15 INFO  ConsoleView:59 - Calendar for week has been printed
+2021-01-29 16:18:15 INFO  ConsoleView:34 - The task list has been printed
+2021-01-29 16:18:19 INFO  Controller:211 - Getting user input. Result: 1
+2021-01-29 16:18:19 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:18:22 INFO  Controller:124 - Getting user input. Result: 3
+2021-01-29 16:18:22 INFO  Main:37 - File data.txt has been deleted
+2021-01-29 16:18:22 INFO  Main:40 - New file data.txt created
+2021-01-29 16:18:22 INFO  Main:46 - Data has been written to a file data.txt
+2021-01-29 16:18:22 INFO  Controller:142 - Terminating the program ============
+2021-01-29 16:18:54 INFO  Main:22 - Start of the program ===================
+2021-01-29 16:18:54 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 16:18:54 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 16:18:54 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:18:54 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:18:54 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:18:54 INFO  Main:31 - Go to main menu
+2021-01-29 16:18:54 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:18:58 INFO  Controller:124 - Getting user input. Result: 2
+2021-01-29 16:18:58 INFO  Controller:137 - Go to list all tasks
+2021-01-29 16:18:58 INFO  ConsoleView:80 - List menu has been printed
+2021-01-29 16:18:58 INFO  ConsoleView:34 - The task list has been printed
+2021-01-29 16:19:00 INFO  Controller:155 - Getting user input. Result: 0
+2021-01-29 16:19:00 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:19:03 INFO  Controller:124 - Getting user input. Result: 3
+2021-01-29 16:19:03 INFO  Main:37 - File data.txt has been deleted
+2021-01-29 16:19:03 ERROR Main:43 - IOException, while creating new file
+2021-01-29 16:19:03 ERROR TaskIO:62 - IOException, while writing the text to a file
+2021-01-29 16:19:03 INFO  Main:46 - Data has been written to a file data.txt
+2021-01-29 16:19:03 INFO  Controller:142 - Terminating the program ============
+2021-01-29 16:19:08 INFO  Main:22 - Start of the program ===================
+2021-01-29 16:19:08 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 16:19:08 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 16:19:08 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:19:08 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:19:08 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:19:08 INFO  Main:31 - Go to main menu
+2021-01-29 16:19:08 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:20:36 INFO  Main:22 - Start of the program ===================
+2021-01-29 16:20:36 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 16:20:36 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 16:20:36 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:20:36 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:20:36 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:20:36 INFO  Main:31 - Go to main menu
+2021-01-29 16:20:36 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:20:51 INFO  Main:22 - Start of the program ===================
+2021-01-29 16:20:51 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 16:20:51 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 16:20:51 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:20:51 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:20:51 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:20:51 INFO  Main:31 - Go to main menu
+2021-01-29 16:20:51 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:31:47 INFO  Main:22 - Start of the program ===================
+2021-01-29 16:31:47 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 16:31:47 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 16:31:47 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:31:47 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:31:47 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:31:47 INFO  Main:31 - Go to main menu
+2021-01-29 16:31:47 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:31:51 INFO  Controller:124 - Getting user input. Result: 2
+2021-01-29 16:31:51 INFO  Controller:137 - Go to list all tasks
+2021-01-29 16:31:51 INFO  ConsoleView:80 - List menu has been printed
+2021-01-29 16:31:51 INFO  ConsoleView:34 - The task list has been printed
+2021-01-29 16:31:54 INFO  Controller:155 - Getting user input. Result: 0
+2021-01-29 16:31:54 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:31:56 INFO  Controller:124 - Getting user input. Result: 0
+2021-01-29 16:32:13 INFO  Controller:128 - Got info about new task
+2021-01-29 16:32:13 INFO  Controller:78 - Added new task
+2021-01-29 16:32:13 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:32:13 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:32:13 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:32:13 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:32:14 INFO  Controller:124 - Getting user input. Result: 3
+2021-01-29 16:32:14 INFO  Main:37 - File data.txt has been deleted
+2021-01-29 16:32:14 INFO  Main:40 - New file data.txt created
+2021-01-29 16:32:14 INFO  Main:46 - Data has been written to a file data.txt
+2021-01-29 16:32:14 INFO  Controller:142 - Terminating the program ============
+2021-01-29 16:33:06 INFO  Main:22 - Start of the program ===================
+2021-01-29 16:33:06 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 16:33:06 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 16:33:06 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:33:07 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:33:07 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:33:07 INFO  Main:31 - Go to main menu
+2021-01-29 16:33:07 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:33:09 INFO  Controller:124 - Getting user input. Result: 2
+2021-01-29 16:33:09 INFO  Controller:137 - Go to list all tasks
+2021-01-29 16:33:09 INFO  ConsoleView:80 - List menu has been printed
+2021-01-29 16:33:09 INFO  ConsoleView:34 - The task list has been printed
+2021-01-29 16:33:11 INFO  Controller:155 - Getting user input. Result: 0
+2021-01-29 16:33:11 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:42:55 INFO  Main:22 - Start of the program ===================
+2021-01-29 16:42:55 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 16:42:55 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 16:42:55 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:42:55 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:42:55 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:42:55 INFO  Main:31 - Go to main menu
+2021-01-29 16:42:55 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:42:59 INFO  Controller:124 - Getting user input. Result: 0
+2021-01-29 16:43:36 INFO  Controller:128 - Got info about new task
+2021-01-29 16:43:36 INFO  Controller:78 - Added new task
+2021-01-29 16:43:36 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:43:36 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:43:36 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:43:36 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:43:39 INFO  Controller:124 - Getting user input. Result: 2
+2021-01-29 16:43:39 INFO  Controller:137 - Go to list all tasks
+2021-01-29 16:43:39 INFO  ConsoleView:80 - List menu has been printed
+2021-01-29 16:43:39 INFO  ConsoleView:34 - The task list has been printed
+2021-01-29 16:43:53 INFO  Controller:155 - Getting user input. Result: 0
+2021-01-29 16:43:53 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:43:57 INFO  Controller:124 - Getting user input. Result: 2
+2021-01-29 16:43:57 INFO  Controller:137 - Go to list all tasks
+2021-01-29 16:43:57 INFO  ConsoleView:80 - List menu has been printed
+2021-01-29 16:43:57 INFO  ConsoleView:34 - The task list has been printed
+2021-01-29 16:43:59 INFO  Controller:155 - Getting user input. Result: 0
+2021-01-29 16:43:59 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:44:00 INFO  Controller:124 - Getting user input. Result: 3
+2021-01-29 16:44:00 INFO  Main:37 - File data.txt has been deleted
+2021-01-29 16:44:00 INFO  Main:40 - New file data.txt created
+2021-01-29 16:44:00 INFO  Main:46 - Data has been written to a file data.txt
+2021-01-29 16:44:00 INFO  Controller:142 - Terminating the program ============
+2021-01-29 16:44:09 INFO  Main:22 - Start of the program ===================
+2021-01-29 16:44:09 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 16:44:09 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:44:09 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:44:09 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:44:09 INFO  Main:31 - Go to main menu
+2021-01-29 16:44:09 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:44:14 INFO  Controller:124 - Getting user input. Result: 2
+2021-01-29 16:44:14 INFO  Controller:137 - Go to list all tasks
+2021-01-29 16:44:14 INFO  ConsoleView:80 - List menu has been printed
+2021-01-29 16:44:14 INFO  ConsoleView:34 - The task list has been printed
+2021-01-29 16:44:16 INFO  Controller:155 - Getting user input. Result: 0
+2021-01-29 16:44:16 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:44:23 INFO  Main:22 - Start of the program ===================
+2021-01-29 16:44:23 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 16:44:23 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:44:23 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:44:23 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:44:23 INFO  Main:31 - Go to main menu
+2021-01-29 16:44:23 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:46:29 INFO  Main:22 - Start of the program ===================
+2021-01-29 16:46:29 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 16:46:29 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:46:29 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:46:29 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:46:29 INFO  Main:31 - Go to main menu
+2021-01-29 16:46:29 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:46:35 INFO  Controller:124 - Getting user input. Result: 2
+2021-01-29 16:46:35 INFO  Controller:137 - Go to list all tasks
+2021-01-29 16:46:35 INFO  ConsoleView:80 - List menu has been printed
+2021-01-29 16:46:35 INFO  ConsoleView:34 - The task list has been printed
+2021-01-29 16:47:00 INFO  Controller:155 - Getting user input. Result: 0
+2021-01-29 16:47:00 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:47:01 INFO  Controller:124 - Getting user input. Result: 3
+2021-01-29 16:47:01 INFO  Main:37 - File data.txt has been deleted
+2021-01-29 16:47:01 INFO  Main:40 - New file data.txt created
+2021-01-29 16:47:01 INFO  Main:46 - Data has been written to a file data.txt
+2021-01-29 16:47:01 INFO  Controller:142 - Terminating the program ============
+2021-01-29 16:47:41 INFO  Main:22 - Start of the program ===================
+2021-01-29 16:47:41 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 16:47:41 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 16:47:41 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:47:41 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:47:41 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:47:41 INFO  Main:31 - Go to main menu
+2021-01-29 16:47:41 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:47:43 INFO  Controller:124 - Getting user input. Result: 2
+2021-01-29 16:47:43 INFO  Controller:137 - Go to list all tasks
+2021-01-29 16:47:43 INFO  ConsoleView:80 - List menu has been printed
+2021-01-29 16:47:43 INFO  ConsoleView:34 - The task list has been printed
+2021-01-29 16:47:45 INFO  Controller:155 - Getting user input. Result: 0
+2021-01-29 16:47:45 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:47:46 INFO  Controller:124 - Getting user input. Result: 0
+2021-01-29 16:48:01 INFO  Controller:128 - Got info about new task
+2021-01-29 16:48:02 INFO  Controller:78 - Added new task
+2021-01-29 16:48:02 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:48:02 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:48:02 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:48:02 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:48:03 INFO  Controller:124 - Getting user input. Result: 2
+2021-01-29 16:48:03 INFO  Controller:137 - Go to list all tasks
+2021-01-29 16:48:03 INFO  ConsoleView:80 - List menu has been printed
+2021-01-29 16:48:03 INFO  ConsoleView:34 - The task list has been printed
+2021-01-29 16:48:05 INFO  Controller:155 - Getting user input. Result: 0
+2021-01-29 16:48:05 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:48:07 INFO  Controller:124 - Getting user input. Result: 3
+2021-01-29 16:48:07 INFO  Main:37 - File data.txt has been deleted
+2021-01-29 16:48:07 ERROR Main:43 - IOException, while creating new file
+2021-01-29 16:48:07 ERROR TaskIO:62 - IOException, while writing the text to a file
+2021-01-29 16:48:07 INFO  Main:46 - Data has been written to a file data.txt
+2021-01-29 16:48:07 INFO  Controller:142 - Terminating the program ============
+2021-01-29 16:48:10 INFO  Main:22 - Start of the program ===================
+2021-01-29 16:48:10 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 16:48:10 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 16:48:10 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:48:10 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:48:10 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:48:10 INFO  Main:31 - Go to main menu
+2021-01-29 16:48:10 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:48:12 INFO  Controller:124 - Getting user input. Result: 2
+2021-01-29 16:48:12 INFO  Controller:137 - Go to list all tasks
+2021-01-29 16:48:12 INFO  ConsoleView:80 - List menu has been printed
+2021-01-29 16:48:12 INFO  ConsoleView:34 - The task list has been printed
+2021-01-29 16:54:55 INFO  Main:22 - Start of the program ===================
+2021-01-29 16:54:55 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 16:54:55 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 16:54:55 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:54:55 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:54:55 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:54:55 INFO  Main:31 - Go to main menu
+2021-01-29 16:54:55 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:54:57 INFO  Controller:124 - Getting user input. Result: 2
+2021-01-29 16:54:57 INFO  Controller:137 - Go to list all tasks
+2021-01-29 16:54:57 INFO  ConsoleView:80 - List menu has been printed
+2021-01-29 16:54:57 INFO  ConsoleView:34 - The task list has been printed
+2021-01-29 16:54:58 INFO  Controller:155 - Getting user input. Result: 0
+2021-01-29 16:54:58 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:54:59 INFO  Controller:124 - Getting user input. Result: 0
+2021-01-29 16:55:17 INFO  Controller:128 - Got info about new task
+2021-01-29 16:55:17 INFO  Controller:78 - Added new task
+2021-01-29 16:55:17 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 16:55:17 INFO  NotificationController:35 - Created new timers
+2021-01-29 16:55:17 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 16:55:17 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:55:18 INFO  Controller:124 - Getting user input. Result: 2
+2021-01-29 16:55:18 INFO  Controller:137 - Go to list all tasks
+2021-01-29 16:55:18 INFO  ConsoleView:80 - List menu has been printed
+2021-01-29 16:55:18 INFO  ConsoleView:34 - The task list has been printed
+2021-01-29 16:55:23 INFO  Controller:155 - Getting user input. Result: 0
+2021-01-29 16:55:23 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 16:55:24 INFO  Controller:124 - Getting user input. Result: 3
+2021-01-29 16:55:24 INFO  Main:37 - File data.txt has been deleted
+2021-01-29 16:55:24 ERROR Main:43 - IOException, while creating new file
+2021-01-29 16:55:24 ERROR TaskIO:62 - IOException, while writing the text to a file
+2021-01-29 16:55:24 INFO  Main:46 - Data has been written to a file data.txt
+2021-01-29 16:55:24 INFO  Controller:142 - Terminating the program ============
+2021-01-29 17:06:11 INFO  Main:22 - Start of the program ===================
+2021-01-29 17:06:11 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 17:06:11 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 17:06:11 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 17:06:12 INFO  NotificationController:35 - Created new timers
+2021-01-29 17:06:12 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 17:06:12 INFO  Main:31 - Go to main menu
+2021-01-29 17:06:12 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 17:06:15 INFO  Controller:124 - Getting user input. Result: 0
+2021-01-29 17:06:35 INFO  Controller:128 - Got info about new task
+2021-01-29 17:06:35 INFO  Controller:78 - Added new task
+2021-01-29 17:06:35 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 17:06:35 INFO  NotificationController:35 - Created new timers
+2021-01-29 17:06:35 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 17:06:35 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 17:06:37 INFO  Controller:124 - Getting user input. Result: 2
+2021-01-29 17:06:37 INFO  Controller:137 - Go to list all tasks
+2021-01-29 17:06:37 INFO  ConsoleView:80 - List menu has been printed
+2021-01-29 17:06:37 INFO  ConsoleView:34 - The task list has been printed
+2021-01-29 17:06:46 INFO  Controller:155 - Getting user input. Result: 0
+2021-01-29 17:06:46 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 17:06:48 INFO  Controller:124 - Getting user input. Result: 0
+2021-01-29 17:08:05 INFO  Main:22 - Start of the program ===================
+2021-01-29 17:08:05 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 17:08:05 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 17:08:05 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 17:08:05 INFO  NotificationController:35 - Created new timers
+2021-01-29 17:08:05 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 17:08:05 INFO  Main:31 - Go to main menu
+2021-01-29 17:08:05 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 17:08:07 INFO  Controller:124 - Getting user input. Result: 0
+2021-01-29 17:08:25 INFO  Controller:128 - Got info about new task
+2021-01-29 17:08:25 INFO  Controller:78 - Added new task
+2021-01-29 17:08:25 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 17:08:25 INFO  NotificationController:35 - Created new timers
+2021-01-29 17:08:25 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 17:08:25 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 17:08:26 INFO  Controller:124 - Getting user input. Result: 2
+2021-01-29 17:08:26 INFO  Controller:137 - Go to list all tasks
+2021-01-29 17:08:26 INFO  ConsoleView:80 - List menu has been printed
+2021-01-29 17:08:27 INFO  ConsoleView:34 - The task list has been printed
+2021-01-29 17:08:33 INFO  Main:22 - Start of the program ===================
+2021-01-29 17:08:33 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 17:08:33 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 17:08:33 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 17:08:33 INFO  NotificationController:35 - Created new timers
+2021-01-29 17:08:33 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 17:08:33 INFO  Main:31 - Go to main menu
+2021-01-29 17:08:33 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 17:08:39 INFO  Controller:155 - Getting user input. Result: 0
+2021-01-29 17:08:39 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 17:08:49 INFO  Controller:124 - Getting user input. Result: 0
+2021-01-29 17:09:22 INFO  Controller:128 - Got info about new task
+2021-01-29 17:09:22 INFO  Controller:78 - Added new task
+2021-01-29 17:09:22 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 17:09:22 INFO  NotificationController:35 - Created new timers
+2021-01-29 17:09:22 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 17:09:22 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 17:09:26 INFO  Controller:124 - Getting user input. Result: 2
+2021-01-29 17:09:26 INFO  Controller:137 - Go to list all tasks
+2021-01-29 17:09:26 INFO  ConsoleView:80 - List menu has been printed
+2021-01-29 17:09:26 INFO  ConsoleView:34 - The task list has been printed
+2021-01-29 17:09:59 INFO  Controller:155 - Getting user input. Result: 0
+2021-01-29 17:09:59 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 17:10:01 INFO  Controller:124 - Getting user input. Result: 3
+2021-01-29 17:10:01 INFO  Main:37 - File data.txt has been deleted
+2021-01-29 17:10:01 INFO  Main:40 - New file data.txt created
+2021-01-29 17:10:01 INFO  Main:46 - Data has been written to a file data.txt
+2021-01-29 17:10:01 INFO  Controller:142 - Terminating the program ============
+2021-01-29 17:11:22 INFO  Main:22 - Start of the program ===================
+2021-01-29 17:11:22 ERROR TaskIO:71 - IOException, while reading the text from a file
+2021-01-29 17:11:22 INFO  Main:27 - Data from the file data.txt has been read
+2021-01-29 17:11:22 INFO  NotificationController:21 - Timers were canceled
+2021-01-29 17:11:22 INFO  NotificationController:35 - Created new timers
+2021-01-29 17:11:22 INFO  Main:51 - Restarted the notification subsystem
+2021-01-29 17:11:22 INFO  Main:31 - Go to main menu
+2021-01-29 17:11:22 INFO  ConsoleView:74 - Main menu has been printed
+2021-01-29 17:11:28 INFO  Controller:124 - Getting user input. Result: 3
+2021-01-29 17:11:28 INFO  Main:37 - File data.txt has been deleted
+2021-01-29 17:11:28 INFO  Main:40 - New file data.txt created
+2021-01-29 17:11:28 INFO  Main:46 - Data has been written to a file data.txt
+2021-01-29 17:11:28 INFO  Controller:142 - Terminating the program ============
