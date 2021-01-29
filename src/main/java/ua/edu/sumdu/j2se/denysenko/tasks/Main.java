@@ -22,7 +22,7 @@ public class Main {
 	    logger.info("Start of the program ===================");
 		AbstractTaskList model = new LinkedTaskList();
 		ConsoleView view = new ConsoleView();
-		data = new File("src\\main\\resources\\data.txt");
+		data = new File("data.txt");
 		TaskIO.readBinary(model, data);
 		logger.info("Data from the file data.txt has been read");
 		Controller controller = new Controller(model, view);
